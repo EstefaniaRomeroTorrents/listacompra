@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lista de la compra</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="list.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="left">
+        <h1 class="h1">Lista de la compra</h1>
+        <div class="myFlex myMargin input-justify">
+          <div class="input-margin myFlex">
+            <input
+              type="text"
+              id="element"
+              name="element"
+              size="45"
+              class="round"
+              placeholder="Escribe aquí el producto"
+            />
+            <div>
+              <button class="myButton" onclick="addToList()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="30px"
+                  viewBox="0 0 24 24"
+                  width="30px"
+                >
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <button
+              class="buttonReset"
+              type="reset"
+              onclick="deleteAll('list')"
+            >
+              Eliminar todos
+            </button>
+          </div>
+        </div>
+        <div>
+          <ul id="list"></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
